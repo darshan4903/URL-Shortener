@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL-Shortener</title>
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <div class="container-url">
+        <div class="content-container">
+    <h1>URL Shortner</h1>
+    <form action="/shortUrls" method="post">
+        <label for="fullUrl" >    URL    </label>
+            <input type="url" id="fullUrl" placeholder="FULL URL" name="fullUrl">
+            <button type="submit">Short</button>
+
+    </form>
+    <table ">
+        <thead>
+            <tr>
+                <th >FULL URL</th>
+                <th>Short URL</th>
+                <th>Number of Visits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% shortUrls.forEach(shortUrl => { %>
+                <tr>
+                    <td class="table-URL-heading"><a href="<%=shortUrl.full%>"><%=shortUrl.full%></a></td>
+                    <td><a href="<%=shortUrl.short%>"><%=shortUrl.short%></a></td>
+                    <td><%=shortUrl.clicks%></td>
+    
+                    
+                </tr>
+           <% }) %> 
+
+        </tbody>
+    </table>
+</div>
+
+
+</div>
+</body>
+</html> 

@@ -1,0 +1,72 @@
+.container-url{
+    /* background-color: brown; */
+    width: 70vw;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.table-URL-heading{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vw;
+    overflow-x: scroll;
+
+}
+body{
+    background-image: linear-gradient(to bottom right, rgb(198,47,114), rgb(55,16,68));
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Cursive;
+}
+button{
+    background-color: rgb(235, 53, 125);
+    box-shadow: 0;
+    border: 0;
+    width: 70px;
+    height: 30px;
+}
+input{
+    height: 30px;
+    width: 30vw;
+}
+h1{
+    font-size: 4rem;
+}
+label{
+    width: 200px;
+    padding: 0%;
+}
+td{
+    padding: 10px;
+}
+th{
+    padding: 10px;
+}
+form{
+    padding: 10px;
+}
+a{
+    color: rgb(68, 190, 190);
+}
+a:hover{
+    color: chartreuse;
+}
+a:active{
+    color: black;
+}
+a:visited{
+    color: rgb(0, 122, 131);
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+table{
+    overflow-y: scroll;
+}
+title{
+    align-self: center;
+}
